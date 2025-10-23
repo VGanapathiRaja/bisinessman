@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+     font-family: "Oswald", sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ebebebac;
+}
+.logo img{
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+}
+.logo i {
+    font-size: 36px;
+    margin: 10px;
+    padding: 10px;
+    display: none;
+}
+.logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menus ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+.menus ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #ff511a;
+}
+.menus ul li:hover{
+    background-color: #20263e;
+    transition: all 0.5s ease-in-out;
+}
+.supermenu{
+    position: relative;
+}
+.submenu{
+    position: absolute;
+    top: 50px;
+    display: none;
+}
+.supermenu:hover .submenu{
+    display: block;
+    transition: all 0.5s ease-in;
+}
+.submenu li{
+    width: 200px;
+}
+.btncontact{
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 10px 25px !important;
+}
+
+/* footer */
+footer{
+    background: #545454;
+    padding: 60px 60px;
+    color: #fff;
+    text-align: center;
+}
+footer a{
+    color: #ff511a;
+    text-decoration: none;
+    padding: 5px;
+}
+/* hero sectionm */
+.herosection{
+    background-image: url("assets/slide-01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 60px 60px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.herocontent{
+    background-color: #f166663d;
+    color: #fff;
+    padding: 30px 20px;
+    margin: 10px;
+    width: 500px;
+}
+.herocontent h2{
+    font-size: 44px;
+    padding: 5px;
+}
+.herocontent p{
+    font-size: 16px;
+    padding: 5px;
+}
+.herocontent button{
+    padding: 10px 30px;
+    border: 1px solid #ff511a;
+    border-radius: 10px;
+    margin: 10px 5px;
+}
+/* ad sectionm */
+.adsection{
+    padding: 60px 60px;
+}
+.adbox{
+    background-color: aliceblue;
+    width: 600px;
+    padding: 25px 30px;
+    margin: 10px 10px;
+    /* border: 1px solid #20263e89; */
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adicon i{
+    font-size: 56px;
+    padding: 10px;
+    margin: 5px;
+    color: green;
+}
+.adbox:hover i{
+    transform: scale(1.5);
+    transition: all 0.5s ease-in-out;
+}
+.adboxcontent{
+    padding: 10px;
+    margin: 5px;
+}
+.adboxcontent h3{
+    font-size: 28px;
+    padding: 5px;
+}
+.adboxcontent p{
+    font-size: 18px;
+    padding: 5px;
+}
+.adrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Busines bbtn sec */
+.bussinessbtnsec{
+    background-image: url('assets/calculator-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 75px 60px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+}
+.btnspan1,.btnspan2{
+    font-size: 20px;
+    padding: 5px;
+}
+.btnspan1{
+    color: #ff511a;
+}
+.btnspan2{
+    color: green;
+}
+.btn button{
+    padding: 10px 30px;
+    margin: 10px 5px;
+    font-size: 18px;
+}
+.btn button:nth-child(1){
+    background-color: #ff511a;
+    border:  2px solid #ff511a;
+    color: #fff;
+    border-radius: 5px;
+}
+.btn button:nth-child(1):hover{
+    background-color: #f5754e;
+     border:  2px solid #f07b58;
+}
+.btn button:nth-child(2){
+    background-color: #217904;
+    border:  2px solid #217904;
+    color: #fff;
+    border-radius: 5px;
+}
+.btn button:nth-child(2):hover{
+    background-color: #11e94e;
+     border:  2px solid #11e94e;
+}
+/* about */
+.aboutsec{
+    padding: 75px 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.aboutleft,.aboutright{
+    width: 600px;
+    padding: 20px 10px;
+    margin: 15px 10px;
+}
+.about ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: aliceblue;
+    margin: 5px;
+}
+.about ul li:hover{
+    background-color: antiquewhite;
+}
+.about ul li a{
+    text-decoration: none;
+    color: #20263e;
+    font-size: 18px;
+}
+.about table,tr,th,td{
+    border-bottom: 1px solid #20263e;
+    padding: 10px;
+}
+.navscontent table .protitel{
+    color: #11e94e !important;
+}
+/* conatct */
+.Contactsec{
+    padding: 75px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assets/calculator-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.formleftpart {
+    position: relative;
+    width: 600px;
+}
+.formleftpart img{
+    width: 400px;
+    padding: 10px;
+    margin: 10px 5px;
+    position: absolute;
+    top: -300px;
+    right: 0;
+    
+}
+.formrightpart {
+    color: #fff;
+    padding: 30px 20px;
+    margin: 10px 0;
+    width: 600px;
+}
+.formrightpart label{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.formrightpart input,.formrightpart select,.formrightpart textarea{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    color: #ff511a;
+    border: 1px solid #f07b58;
+}
+/* testi sec */
+.testies{
+    padding: 75px 60px;
+}
+.heading{
+    text-align: center;
+    padding: 25px 10px;
+    margin: 10px 0;
+}
+.slidercontent {
+    padding: 25px;
+    margin: 10px;
+    width: 600px;
+}
+.slidercontent .icon{
+    background-color: #01300e;
+    color: #fff;
+    font-size: 36px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    width: 80px;
+    text-align: center;
+}
+.slidercontent h4{
+    color: #01300e;
+    padding: 10px;
+}
+.slidercontent h5{
+    padding: 10px;
+}
+.sliderimg{
+    width: 600px;
+    padding: 25px;
+    margin: 10px 0;
+    text-align: start;
+}
+.testslider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+@media (min-width:320px) and (max-width:480px){
+    header{
+        display: block;
+        position: relative;
+    }
+    .logo i{
+        display: block;
+    }
+    .menus ul li{
+        display: block;
+    }
+    .menus{
+        background-color: rgb(160, 197, 230);
+        position: absolute;
+        left: -100%;
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+    }
+    .menus.open{
+        left: -0%;
+    }
+    .herosection{
+        padding: 60px 0;
+    }
+    .herocontent{
+        width: inherit;
+    }
+    .herocontent h2{
+        font-size: 22px;
+    }
+    .adsection{
+        padding: 60px 0;
+    }
+    .adrow{
+        display: block;
+    }
+    .adbox{
+        width: inherit;
+        display: block;
+    }
+    .bussinessbtnsec{
+        display: block;
+        padding: 75px 50px;
+    }
+    .btn button{
+        width: 100%;
+    }
+    .aboutsec{
+        display: block;
+        padding: 75px 0;
+    }
+    .aboutleft,.aboutright{
+        width: 100%;
+         margin: 10px 0;
+    }
+    .aboutleft table{
+        width: inherit;
+        overflow-x: hidden;
+    }
+    .Contactsec{
+        display: block;
+        padding: 75px 0;
+        height: 150vh;
+    }
+    .formleftpart img{
+        display: none;
+    }
+    .formleftpart,.formrightpart{
+        width: inherit;
+    }
+    .testies{
+        padding: 75px 0;
+    }
+    .slidercontent,.sliderimg{
+        width: inherit;
+    }
+    .sliderimg img{
+        width: 100%;
+    }
+    .testslider{
+        display: block;
+    }
+    
+}
